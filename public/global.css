@@ -1,0 +1,222 @@
+@font-face {
+	font-family: "Nassim Regular";
+	font-weight: 300;
+	src: url(assets/fonts/nassim-arabic-web-regular.ttf);
+}
+
+@font-face {
+	font-family: "Nassim Bold";
+	font-weight: 600;
+	src: url(assets/fonts/nassim-arabic-web-bold.ttf);
+}
+
+@font-face {
+	font-family: "Alegreya Regular";
+	font-weight: 300;
+	src: url(assets/fonts/alegreya-regular.ttf);
+}
+
+@font-face {
+	font-family: "Alegreya Bold";
+	font-weight: 600;
+	src: url(assets/fonts/alegreya-bold.ttf);
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+:root {
+	--primary: #2b2b2b;
+	--primary-dark: #1a1a1a;
+	--secondary: #ededed;
+}
+
+html {
+	-webkit-tap-highlight-color: transparent;
+	scroll-behavior: smooth;
+	scrollbar-color: var(--primary);
+	scrollbar-width: thin;
+	overflow-y: scroll;
+	outline: none;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Alegreya Regular", Helvetica, sans-serif;
+	background-color: var(--primary);
+	color: var(--secondary);
+}
+
+::-webkit-scrollbar {
+	width: 0.5em;
+}
+
+::-webkit-scrollbar-track {
+	background: var(--primary);
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--primary-dark);
+}
+
+:lang(ar) {
+	direction: rtl;
+	font-family: "Nassim Bold", Helvetica, sans-serif;
+}
+
+:lang(en) {
+	direction: ltr;
+	text-align: right;
+	font-family: "Alegreya Regular", Helvetica, sans-serif;
+}
+
+.logo {
+	background: url("./assets/logo.svg");
+	background-repeat: no-repeat;
+	background-position: right;
+	height: 300px;
+}
+
+.thanks {
+	background: url("./assets/thanks.svg");
+	background-repeat: no-repeat;
+	background-position: right;
+	height: 300px;
+}
+
+.arrow-down {
+	background: url("./assets/arrow-down.svg");
+	height: 60px;
+	width: 60px;
+}
+
+.arrow-up {
+	transform: rotate(180deg);
+	background: url("./assets/arrow-down.svg");
+	height: 60px;
+	width: 60px;
+}
+
+.call {
+	background: url("./assets/call.svg");
+	height: 60px;
+	width: 60px;
+}
+
+.map {
+	background: url("./assets/map.svg");
+	height: 60px;
+	width: 60px;
+}
+
+.instagram {
+	background: url("./assets/instagram.svg");
+	height: 60px;
+	width: 60px;
+}
+
+.store {
+	background: url("./assets/store.svg");
+	background-repeat: no-repeat;
+	height: 60px;
+	width: 60px;
+}
+
+h1 {
+	font-size: 3.5em;
+	line-height: 1.6em;
+}
+
+p {
+	font-size: 2em;
+	line-height: 1.6em;
+}
+
+ul {
+	text-decoration: none;
+	list-style: none;
+}
+
+section {
+	display: grid;
+	grid-template-rows: auto 130px;
+	padding: 5em 10em;
+	gap: 1em;
+	height: 90vh;
+	animation: 2s ease-out loadPage;
+}
+
+.box {
+	display: inline-block;
+	max-width: 60px;
+	margin-left: 1.5em;
+	transition: opacity 0.3s ease-in;
+}
+
+.box:hover {
+	opacity: 0.7;
+}
+
+img {
+	width: 100%;
+	border-radius: 0.5em;
+}
+
+.btn {
+	display: inline-block;
+	padding: 0.5em;
+	margin: 3em 0 0 0.1em;
+	font-size: 2em;
+	transition: opacity 0.3s ease-in;
+}
+
+.btn:hover {
+	opacity: 0.7;
+}
+
+.btn-primary {
+	color: var(--primary);
+	border: solid 1px var(--secondary);
+	background-color: var(--secondary);
+}
+
+.btn-secondary {
+	color: var(--secondary);
+	border: solid 1px var(--secondary);
+}
+
+.products {
+	display: grid;
+	gap: 1em;
+	grid-template-columns: repeat(4, auto);
+}
+
+@keyframes loadPage {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	section {
+		padding: 1em;
+		height: 99vh;
+	}
+	.products {
+		gap: 0.5em;
+	}
+	h1 {
+		font-size: 3em;
+	}
+	p {
+		font-size: 1.4em;
+	}
+	.btn {
+		margin: 0 0 0 0.1em;
+	}
+}

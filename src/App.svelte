@@ -4,9 +4,9 @@
       id: "welcome",
     },
     {
-      id: "vison",
+      id: "vision",
       article: {
-        title_en: "vison",
+        title_en: "vision",
         title_ar: "رُؤْيَـتُـنـــا",
         text_en:
           "to remove the stigma of dark roasted coffee being burnt coffee",
@@ -23,10 +23,10 @@
           "we offer a range of the finest crops, in addition to special blends",
         text_ar: "نوفر مجموعة من أجود المحاصيل، بالإضافة إلى خلطات خاصة",
         items: [
-          "https://media.zid.store/b32b646e-e783-482c-b26d-2cea92e04a83/637dcf28-36c3-4c60-a208-d1c5de311ee9.png",
-          "https://media.zid.store/b32b646e-e783-482c-b26d-2cea92e04a83/57ea01c4-a018-434d-b224-e7a3f0ac08a1.png",
-          "https://media.zid.store/b32b646e-e783-482c-b26d-2cea92e04a83/10edd0cc-6888-4e68-ba38-daded050531f.png",
-          "https://media.zid.store/b32b646e-e783-482c-b26d-2cea92e04a83/8d3ccc77-ca69-4bbb-b0c4-24ea09fdcfe6.png",
+          "https://media.zid.store/b32b646e-e783-482c-b26d-2cea92e04a83/29d865a3-0566-4c87-8ddd-b09f53c47b28.png",
+          "https://media.zid.store/b32b646e-e783-482c-b26d-2cea92e04a83/14f4ac1c-8795-41e7-8dd4-58b3e6cf1951.png",
+          "https://media.zid.store/b32b646e-e783-482c-b26d-2cea92e04a83/ee5221fb-9fb3-4e69-a478-777cbc00df23.png",
+          "https://media.zid.store/b32b646e-e783-482c-b26d-2cea92e04a83/3e388a66-c0b8-4b65-b8a1-0ff535c472ae.png",
         ],
         extra_en: "and more on-demand...",
         extra_ar: "والمزيد حسب الطلب..."
